@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Online from "../assets/img/Online-shopping.jpg"
+import Online from "../assets/img/Online-Shopping.jpg"
 import CartItem from '../components/CartItem'
 import ProductContext from '../context/product/ProductContext'
 import { Link } from 'react-router-dom'
@@ -8,7 +8,7 @@ const cart = () => {
 
   const { cartItems } = useContext(ProductContext)
   console.log(cartItems)
-  const total = cartItems.reduce((p, c) => {
+  const total = cartItems.reduce((p,c) => {
     return p + c.price 
   }, 0)
 
